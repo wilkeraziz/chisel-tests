@@ -12,7 +12,7 @@ These features are implemented in `chisel.ff.klm`. Check it for help:
 
 	python -m chisel.ff.klm
 	
-1. run
+### Using `chise.ff.klm`
 
 		cat input.sgm | python -m chisel.sampler proxy2.ini target2.ini chisel2.ini cdec2.ini --scaling 5 --samples 100 --input-format cdec -f chisel.ff.klm > output2.txt
 		
@@ -28,7 +28,7 @@ Understanding this
 		LanguageModel_OOV 1.0
 
 
-3. because we complicated the `target` it is useful to start from a better `proxy`, so let's tell `cdec` to use a stateless (read cheaper) version of the n-gram LM feature (compare `cdec.ini` and `cdec2.ini`)
+3. because we complicated the `target` it is useful to start from a better `proxy`, so let's tell `cdec` to use a `stateless` (read `cheaper`) version of the n-gram LM feature (compare `cdec.ini` and `cdec2.ini`)
 		
 		feature_function=StatelessKLanguageModel trigram.klm
 

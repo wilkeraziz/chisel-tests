@@ -1,0 +1,9 @@
+### SCORE REPORT #############################################################
+        OUTPUT=eval/mira-final//eval.tst2010.20140829-111138/test.trans
+  SCRIPT INPUT=grammars/tst2010.sgm
+ DECODER INPUT=eval/mira-final//eval.tst2010.20140829-111138/test.input
+    REFERENCES=eval/mira-final//eval.tst2010.20140829-111138/test.refs
+------------------------------------------------------------------------------
+          BLEU=0.110119
+           TER=0.73654
+##############################################################################
